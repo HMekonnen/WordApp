@@ -1,0 +1,42 @@
+.Words{
+    grid-area: words;
+    border: solid black;
+    background-color: darkgreen;
+    font-size: large black;
+    height: 140%;
+    margin-top: -3%;
+}
+
+.DefinitionDisplay{
+    
+    width: 50%;
+    height: 10%;
+    border-style: dotted black;
+    background-color: white;
+    margin-left: 25%;
+    font-size: xx-large ;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.Word{
+
+    width: 50%;
+    height: 50%;
+    border-style: dotted black;
+    background-color: white;
+    margin-left: 25%;
+    font-size: x-large ;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.WordButton{
+    width: 40%;
+    height: 20%;
+    font-size: x-large;
+    font-weight: bold;
+
+}

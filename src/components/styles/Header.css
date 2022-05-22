@@ -1,0 +1,8 @@
+.Header{
+    grid-area: header;
+    font-size: large black;
+    background-color: lightyellow;
+border: 50% double black;
+height: 60%;
+margin-top: 1%;
+}

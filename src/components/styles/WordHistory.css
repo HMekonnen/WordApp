@@ -1,0 +1,8 @@
+.WordHistory{
+    grid-area: history;
+    font-size: large black;
+    border: solid black;
+    background-color: aquamarine;
+    /* margin-top: .1; */
+    height: 110%;
+}
