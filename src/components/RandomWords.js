@@ -23,7 +23,7 @@ const RandomWords = ({setData})=>{
     //Take 1: Once word is found, set word to myData, then invoke setData(myData), in words.js - if myData = found/True->
     //set apiresponse in randomwords.js to response.data, if false, call word API again to render a new word. 
 
-
+if (response.data)
 
  // response -> sent to words.js -> if true, set api response to response.data if false, call get request again. 
     setApiResponse(response.data)
@@ -48,7 +48,7 @@ const myData = apiResponse
 
 const handleSubmit = (event) =>{
   // fetchRandomWord() Works fine without fetc randomWord 
-   event.preventDefault()         
+  //  event.preventDefault()         
   setCurrentRandomWord(myData)
   console.log(myData)
   
@@ -63,7 +63,8 @@ return (
 
      <div className="RWord">
 
-     {/* {currentRandomWord.map((item)=> <ul>{item}</ul> )} */}
+<h3>Test RWord</h3>
+    
      </div>
      
 <button className="RandButton" onClick={handleSubmit}>Click to Generate a Random Word!</button>
