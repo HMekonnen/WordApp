@@ -5,4 +5,5 @@
     background-color: aquamarine;
     /* margin-top: .1; */
     height: 110%;
+    visibility: hidden;
 }

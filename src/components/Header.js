@@ -5,7 +5,7 @@ import "./styles/Header.css"
 
 // Initial purpose of this component is invalid - will repurpose to use as heroku random word component. 
 const Header = (props)=>{
-    const testing = "Header is up!"
+    const testing = "WordApp, friends!"
 
 return (
     <div className="Header">

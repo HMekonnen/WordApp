@@ -1,42 +1,54 @@
 .Words{
-    grid-area: words;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(5,2fr);
+    justify-content: center;
+    
+    grid-template-areas:
+    
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8"
+    "card9 card10";
+
+    grid-gap: inherit;
+
     border: solid black;
     background-color: darkgreen;
     font-size: large black;
-    height: 140%;
-    margin-top: -3%;
-}
-
-.DefinitionDisplay{
-    
-    width: 50%;
-    height: 10%;
-    border-style: dotted black;
-    background-color: white;
-    margin-left: 25%;
-    font-size: xx-large ;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-.Word{
-
-    width: 50%;
-    height: 50%;
-    border-style: dotted black;
-    background-color: white;
-    margin-left: 25%;
-    font-size: x-large ;
-    font-weight: bold;
-    text-align: center;
+   padding: 125%;
+   margin-left: 20%;   
 
 }
+
+
+
+
 
 .WordButton{
     width: 40%;
     height: 20%;
     font-size: x-large;
     font-weight: bold;
+    visibility: hidden;
 
+}
+
+.cards{
+    grid-area: card1;
+    border: 20% double black;
+    padding: auto;
+    background-color: antiquewhite;
+}
+
+.cards{
+    grid-area: card2;
+    border: 20% double blue;
+    background-color: red;
+}
+
+.cards{
+    grid-area: card3;
+    border: 20% double violet;
 }

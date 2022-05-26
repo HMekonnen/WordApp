@@ -18,7 +18,7 @@ function App() {
 //   const navigate = useNavigate()
 // const [currentWords, setCurrentWords] = useState({})
 
-const testing = "App is up!"
+const testing = ""
 
 const [data, setData] = useState('')
 
@@ -31,23 +31,22 @@ const [data, setData] = useState('')
 
   return (
     <div className="App">
-      {/* <header className="App-header"> */}
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      {/* </header> */}
+   
      
     <h1>  {testing} </h1>
       <Header/>
+      <RandomWords setData={setData}/>
       <Words data={data}/>
       <WordHistory/>
-      <RandomWords setData={setData}/>
-{/* <Routes>
+     
+ {/* <Routes>
 
 <Route path ="/" element={<App fetch={fetchIndivData}/>}/> 
 
 
 <Route path ="/play" element={<Words current={currentWords}/>}/> 
 
-</Routes> */}
+</Routes>  */}
 
     </div>
   );
