@@ -8,28 +8,26 @@ import Header from './Header';
 import Words from './Words';
 import WordHistory from './WordHistory';
 import RandomWords from './RandomWords';
+// import Flashcard from './Flashcard';
 
-
+// C:\Users\mekon\Desktop\wordsapp\src\components\styles
 
 
 
 
 function App() {
-//   const navigate = useNavigate()
-// const [currentWords, setCurrentWords] = useState({})
+
 
 const testing = ""
 
-const [data, setData] = useState('')
+const [data, setData] = useState('');
 
-// const fetchIndivData = async(url)=>{
-//   const response = await axios.get(url)
-//   setCurrentWords(response.data)
-//   navigate('/play')
-// }
+
+
 
 
   return (
+    
     <div className="App">
    
      
@@ -39,17 +37,11 @@ const [data, setData] = useState('')
       <Words data={data}/>
       <WordHistory/>
      
- {/* <Routes>
-
-<Route path ="/" element={<App fetch={fetchIndivData}/>}/> 
-
-
-<Route path ="/play" element={<Words current={currentWords}/>}/> 
-
-</Routes>  */}
+ 
 
     </div>
   );
 }
 
 export default App;
+

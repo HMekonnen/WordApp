@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./styles/Words.css";
+// import "./styles/Words.css";
 import RandomWords from "./RandomWords";
 import { isContentEditable } from "@testing-library/user-event/dist/utils";
+import Flashcard from "./Flashcard";
+import './styles/App.css';
 
 const Words = ({ data }) => {
-  // N.T.S: Data here is utilized as a prop - passed into a component - handled outside component and handed into component.
+  // N.T.S: "data" here is utilized as a prop - passed into Words component - handled outside component then handed into component.
 
   useEffect(() => {
     fetchData();
@@ -55,25 +57,25 @@ temp.push(deets[0])
 
   const handleSubmit = (event) => {
     fetchData();
-    // event.preventDefault()
-    // setCurrentWord(data)  attempt #3424324- this line appears to serve no purpose. // test with Data and without data as argument- i think adding data did the trick
+   
     console.log(`HandleSubmit Words: Data= ${data}`);
     console.log(apiResponse);
   };
 
   return (
-    <div className="Words">
-      1
-      <div>
+    <div >
+      
+      <div className="Words">
          {apiResponse?.map((content,index)=>
-        <div className="cards" key={index}>
+        <div className="Cards" key={index}>
 
 
-  {content.word}
-  {content?.meanings?.[0]?.partOfSpeech}
+ <h4><strong><ol> {content.word} </ol></strong></h4><br/>
+ <div>
+  {content?.meanings?.[0]?.partOfSpeech} <br/>
   {content?.meanings?.[0]?.definitions?.[0]?.definition}
-  {content?.meanings?.[0]?.synonyms?.[0]}
-  
+  {/* {content?.meanings?.[0]?.synonyms?.[0]}  - NB commented out for conciseness, may uncomment later.  */}
+  </div>
   
  
         </div>
@@ -81,10 +83,7 @@ temp.push(deets[0])
         )} 
 
       </div>
-      <button className="WordButton" onClick={handleSubmit}>
-        {" "}
-        Word button!
-      </button>
+    
     </div>
   );
 };

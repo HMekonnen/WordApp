@@ -1,31 +1,18 @@
- body{
-  background-color: lightblue;
+body{
+    background-color: lightgoldenrodyellow;
+    border-style: double;
+    border: 20%;
 }
 
-.App {
-  display: grid;
-  background-color: grey;
-  grid-template-columns: repeat(2,2fr);
-  grid-template-rows: repeat(2,2fr);
-  justify-content: center;
-  height: 1400px;
-  grid-template-areas:
-  
-  "header header"
-  "words words"
-  
-  
-  ;
-  grid-gap: 2%;
+.Cards{
+    font-size: 24px;
+    line-height: 72px;
+    width: 500px;
+    border: 1px black solid;
+    margin: 18px;
+    background-color: rgb(200, 200, 200);
+    cursor: pointer;
   text-align: center;
-  color: black;
-  background-color: lightblue;
-  box-sizing: border-box;
-  border-style: double black;
+  border-radius: 4%;
+ 
 }
-
-
-
-
-
-

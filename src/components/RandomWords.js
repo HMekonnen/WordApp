@@ -2,7 +2,7 @@ import axios from "axios";
 import React, {useEffect, useState} from "react";
 
  import { useNavigate } from "react-router-dom";
-import './styles/RandomWords.css'
+// import './styles/RandomWords.css'
 
 
 const RandomWords = ({setData})=>{
@@ -48,7 +48,7 @@ return (
     <div className="RandomWords">
 
 
-<button className="RandButton" onClick={handleSubmit}>Click to Generate a Random Word!</button>
+<button className="RandButton" onClick={handleSubmit}>Click to Generate a Random Word + Definition!</button>
     
     </div>
   )
